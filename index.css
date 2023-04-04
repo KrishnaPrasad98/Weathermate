@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.container_div{
+    background: url('images/wallpaperflare.com_wallpaper (1).jpg');
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 35%;
+}
+
+/* .search{
+    background-color: transparent;
+} */

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container_div">
+        <div class="flex flex-col items-center" id="search">
+            <label class="text-xl text-white mt-12 mb-3 " for="search">Weather right now at</label>
+            <div class="flex justify-center">
+                <input class="search py-2 px-6 rounded backdrop-blur-sm bg-white/20 outline-none text-white font-extralight" type="text">
+                <!-- Searchbutton -->
+                <button>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="w-10 h-9.5 rounded p-1 ml-2 backdrop-blur-sm bg-white/20">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <div class="flex flex-col items-center justify-center mt-12">
+            <img class="h-28" src="images/main-icon.png" alt="">
+            <p class="text-4xl font-bold text-white">24 °C</p>
+            <p class="text-white">Bengaluru</p>
+        </div>
+
+        <div class="container_other_details flex flex-wrap mt-20 rounded backdrop-blur-sm bg-white/20 p-4 m-4 items-center justify-between">
+            <div class="rain flex py-4">
+                <img class="h-12 pr-2" src="images\rain.png" alt="">
+                <div>
+                    <p class="text-white text-base">Rain</p>
+                    <p class="text-white text-2xl font-semibold">10%</p>
+                </div>
+            </div>
+            <div class="humidity flex py-4">
+                <img class="h-12 pr-2" src="images\humidity.png" alt="">
+                <div>
+                    <p class="text-white text-base">Humidity</p>
+                    <p class="text-white text-2xl font-semibold">20%</p>
+                </div>
+            </div>
+            <div class="pressure flex py-4">
+                <img class="h-12 pr-2" src="images\pressure.png" alt="">
+                <div>
+                    <p class="text-white text-base">Pressure</p>
+                    <p class="text-white text-2xl font-semibold">1015 hPa</p>
+                </div>
+            </div>
+            <div class="wind flex py-4">
+                <img class="h-11 pr-2" src="images\wind2.png" alt="">
+                <div>
+                    <p class="text-white text-base">Wind</p>
+                    <p class="text-white text-2xl font-semibold">20m/s</p>
+                </div>
+            </div>
+            <div class="sunrise flex py-4">
+                <img class="h-12 pr-2" src="images\sunrise.png" alt="">
+                <div>
+                    <p class="text-white text-base">Sunrise</p>
+                    <p class="text-white text-2xl font-semibold">7am</p>
+                </div>
+            </div>
+            <div class="sunset flex  py-4">
+                <img class="h-12 pr-2" src="images\sunset.png" alt="">
+                <div>
+                    <p class="text-white text-base">Sunset</p>
+                    <p class="text-white text-2xl font-semibold">6pm</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+</html>
