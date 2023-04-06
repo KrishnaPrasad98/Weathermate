@@ -12,107 +12,107 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- <video src="images\clear_vid.mov" class="opacity-60" type="video/mp4" autoplay muted loop id="mbgVideo"></video> -->
+    <video src="images\clear_vid.mov" type="video/mp4" autoplay muted loop id="myVideo" class="myVideo"></video>
     <div class="container_div">
-<!-- Search -->
-        <div class="flex flex-col items-center" id="search">
-            <label class="text-xl text-white mt-12 mb-3 " for="search">Weather right now at</label>
-            <div class="flex justify-center">
-                <input class="search_data py-2 px-6 rounded backdrop-blur-sm bg-white/20 outline-none text-white font-extralight placeholder:italic placeholder:text-sm placeholder:text-gray-50" type="text" placeholder="Enter city">
-                <button id="search_btn">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="w-10 h-9.5 rounded p-1 ml-2 backdrop-blur-sm bg-white/20">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
-                    </svg>
-                </button>
-            </div>
-        </div>
-
-<!-- Temperature, Place and Date -->
-        <div class="flex flex-col items-center justify-center mt-12 lg:float-left lg:ml-28">
-            <img class="main_weather_icon h-28" src="images/main-icon.png" alt="">
-            <p class="temperature text-4xl font-bold text-white"> -- </p>
-            <p class="city text-white"> -- </p>
-            <p class="date text-white text-sm">Monday, 23 Apr</p>
-        </div>
-
-<!-- Other weather details -->
-        <div class="container_other_details flex mt-20 rounded backdrop-blur-sm bg-white/20 p-4 m-4 lg:backdrop-filter-none lg:bg-transparent lg:flex-col lg:float-right lg:mr-20">
-            <div class="flex flex-col">
-                <div class="rain flex items-center mb-4 lg:mb-5">
-                    <img class="h-12 pr-2" src="images\rain.png" alt="">
-                    <div>
-                        <p class="text-white text-base">Rain</p>
-                        <p class="rain_data text-white text-2xl font-semibold"> -- </p>
+        <!-- Search -->
+                <div class="flex flex-col items-center" id="search">
+                    <label class="text-xl text-white mt-12 mb-3 " for="search">Weather right now at</label>
+                    <div class="flex justify-center">
+                        <input class="search_data py-2 px-6 rounded backdrop-blur-sm bg-white/20 outline-none text-white font-extralight placeholder:italic placeholder:text-sm placeholder:text-gray-50" spellcheck="false" type="text" placeholder="Enter city">
+                        <button id="search_btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="w-10 h-9.5 rounded p-1 ml-2 backdrop-blur-sm bg-white/20">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                            </svg>
+                        </button>
                     </div>
                 </div>
-                <div class="humidity flex items-center mb-4 lg:mb-5">
-                    <img class="h-12 pr-2" src="images\humidity.png" alt="">
-                    <div>
-                        <p class="text-white text-base">Humidity</p>
-                        <p class="humidity_data text-white text-2xl font-semibold"> -- </p>
+        
+        <!-- Temperature, Place and Date -->
+                <div class="flex flex-col items-center justify-center mt-12 lg:float-left lg:ml-28">
+                    <img class="main_weather_icon h-28" src="images/main-icon.png" alt="">
+                    <p class="temperature text-4xl font-bold text-white"> -- </p>
+                    <p class="city text-white"> -- </p>
+                    <p class="date text-white text-sm">Monday, 23 Apr</p>
+                </div>
+        
+        <!-- Other weather details -->
+                <div class="container_other_details flex mt-20 rounded backdrop-blur-sm bg-white/20 p-4 m-4 lg:backdrop-filter-none lg:bg-transparent lg:flex-col lg:float-right lg:mr-20">
+                    <div class="flex flex-col">
+                        <div class="rain flex items-center mb-4 lg:mb-5">
+                            <img class="h-12 pr-2" src="images\rain.png" alt="">
+                            <div>
+                                <p class="text-white text-base">Rain</p>
+                                <p class="rain_data text-white text-2xl font-semibold"> -- </p>
+                            </div>
+                        </div>
+                        <div class="humidity flex items-center mb-4 lg:mb-5">
+                            <img class="h-12 pr-2" src="images\humidity.png" alt="">
+                            <div>
+                                <p class="text-white text-base">Humidity</p>
+                                <p class="humidity_data text-white text-2xl font-semibold"> -- </p>
+                            </div>
+                        </div>
+                        <div class="pressure flex items-center lg:mb-3">
+                            <img class="h-12 pr-2" src="images\pressure.png" alt="">
+                            <div>
+                                <p class="text-white text-base">Pressure</p>
+                                <p class="pressure_data text-white text-2xl font-semibold"> -- </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col ml-10 lg:ms-0 lg:mt-4">
+                        <div class="wind flex items-center mb-4 lg:mb-5">
+                            <img class="h-12 pr-2" src="images\wind2.png" alt="">
+                            <div>
+                                <p class="text-white text-base">Wind</p>
+                                <p class="wind_data text-white text-2xl font-semibold"> -- </p>
+                            </div>
+                        </div>
+                        <!-- <div class="sunrise flex items-center mb-4 lg:mb-5">
+                            <img class="h-12 pr-2" src="images\sunrise.png" alt="">
+                            <div>
+                                <p class="text-white text-base">Sunrise</p>
+                                <p class="sunrise_data text-white text-2xl font-semibold">7am</p>
+                            </div>
+                        </div>
+                        <div class="sunset flex  items-center">
+                            <img class="h-12 pr-2" src="images\sunset.png" alt="">
+                            <div>
+                                <p class="text-white text-base">Sunset</p>
+                                <p class="sunset_data text-white text-2xl font-semibold">6pm</p>
+                            </div>
+                        </div> -->
                     </div>
                 </div>
-                <div class="pressure flex items-center lg:mb-3">
-                    <img class="h-12 pr-2" src="images\pressure.png" alt="">
-                    <div>
-                        <p class="text-white text-base">Pressure</p>
-                        <p class="pressure_data text-white text-2xl font-semibold"> -- </p>
+        
+        <!-- Next 4 days forecast -->
+                <div class="lg:collapse">
+                    <p class="bottom_section text-white text-sm mt-8 text-center">Next 4 days forecast</p>
+                    <div class="next_days flex justify-around">
+                        <div>
+                            <img class="h-12 pr-2" src="images\main-icon.png" alt="">
+                            <p class="text-white text-sm">24 Apr</p>
+                        </div>
+                        <div>
+                            <img class="h-12 pr-2" src="images\main-icon.png" alt="">
+                            <p class="text-white text-sm">25 Apr</p>
+                        </div>
+                        <div>
+                            <img class="h-12 pr-2" src="images\rain.png" alt="">
+                            <p class="text-white text-sm">26 Apr</p>
+                        </div>
+                        <div>
+                            <img class="h-12 pr-2" src="images\main-icon.png" alt="">
+                            <p class="text-white text-sm">27 Apr</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="flex flex-col ml-10 lg:ms-0 lg:mt-4">
-                <div class="wind flex items-center mb-4 lg:mb-5">
-                    <img class="h-12 pr-2" src="images\wind2.png" alt="">
-                    <div>
-                        <p class="text-white text-base">Wind</p>
-                        <p class="wind_data text-white text-2xl font-semibold"> -- </p>
-                    </div>
-                </div>
-                <!-- <div class="sunrise flex items-center mb-4 lg:mb-5">
-                    <img class="h-12 pr-2" src="images\sunrise.png" alt="">
-                    <div>
-                        <p class="text-white text-base">Sunrise</p>
-                        <p class="sunrise_data text-white text-2xl font-semibold">7am</p>
-                    </div>
-                </div>
-                <div class="sunset flex  items-center">
-                    <img class="h-12 pr-2" src="images\sunset.png" alt="">
-                    <div>
-                        <p class="text-white text-base">Sunset</p>
-                        <p class="sunset_data text-white text-2xl font-semibold">6pm</p>
-                    </div>
+        
+        <!-- Error Message -->
+                <!-- <div class="border h-1/4 w-96 ">
+        
                 </div> -->
-            </div>
-        </div>
-
-<!-- Next 4 days forecast -->
-        <div class="lg:collapse">
-            <p class="bottom_section text-white text-sm mt-8 text-center">Next 4 days forecast</p>
-            <div class="next_days flex justify-around">
-                <div>
-                    <img class="h-12 pr-2" src="images\main-icon.png" alt="">
-                    <p class="text-white text-sm">24 Apr</p>
-                </div>
-                <div>
-                    <img class="h-12 pr-2" src="images\main-icon.png" alt="">
-                    <p class="text-white text-sm">25 Apr</p>
-                </div>
-                <div>
-                    <img class="h-12 pr-2" src="images\rain.png" alt="">
-                    <p class="text-white text-sm">26 Apr</p>
-                </div>
-                <div>
-                    <img class="h-12 pr-2" src="images\main-icon.png" alt="">
-                    <p class="text-white text-sm">27 Apr</p>
-                </div>
-            </div>
-        </div>
-
-<!-- Error Message -->
-        <!-- <div class="border h-1/4 w-96 ">
-
-        </div> -->
-
+        
     </div>
 
     <script src="index.js"></script>

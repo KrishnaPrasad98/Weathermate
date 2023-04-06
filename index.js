@@ -1,6 +1,6 @@
 const apiKey = '7292a6f5959075b5f88cabe170b8b095'
 const apiURL = 'https://api.openweathermap.org/data/2.5/weather?lat=12.9716&lon=77.5946&units=metric&q='
-
+const background = ['images\clear_vid.mov', 'images\dark_clouds_vids.mp4', 'images\drizzle_vid2.mp4', 'images\storm_vid.mp4']
 
 // To Search Place
 
@@ -43,17 +43,17 @@ async function checkWeather(search_data){
     document.querySelector(".date").innerHTML = days[date.getDay()] +', '+ date.getDate() +' '+ months[date.getMonth()];
 
     // To Change background
-    // if(rain_value <25){
-    //     document.querySelector(".container_div").style.backgroundImage="url(images/clear_vid.mov)";
-    // }
-    // if(rain_value > 25 && rain_value < 50){
-    //     document.querySelector(".container_div").style.backgroundImage="url(images/clear_vid.mov)";
-    // }
-    // if(rain_value > 50 && rain_value < 75){
-    //     document.querySelector(".container_div").style.backgroundImage="url(images/clear_vid.mov)";
-    // }
-    // if(rain_value > 75 && rain_value < 100){
-    //     document.querySelector(".container_div").style.backgroundImage="url(images/clear_vid.mov)";
-    // }
+    if(rain_value < 25){
+        document.querySelector(".myVideo").src="images/clear_vid.mov";
+    }
+    if(rain_value > 25 && rain_value < 50){
+        document.querySelector(".myVideo").src="images/dark_clouds_vids.mp4";
+    }
+    if(rain_value > 50 && rain_value < 75){
+        document.querySelector(".myVideo").src="images/drizzle_vid2.mp4";
+    }
+    if(rain_value > 75 && rain_value < 100){
+        document.querySelector(".myVideo").src="images/storm_vid.mp4";
+    }
 }
 
