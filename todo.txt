@@ -1,3 +1,4 @@
 - change main icons with weather
 - animation
 - future forecast
+- bg with responsiveness
