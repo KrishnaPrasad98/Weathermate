@@ -9,13 +9,26 @@ body{
 
 .container_div{
     background: url('images/wallpaperflare.com_wallpaper (1).jpg');
+    /* background-color: black; */
     height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     background-position: 35%;
 }
 
 /* .search{
     background-color: transparent;
 } */
+/* 
+.rain .humidity .pressure .wind .sunrise .sunset{
+    flex-basis: 100%;
+} */
+
+/* .bottom_section{
+    margin-top: 3rem;
+} */
+
+.lg_bottom_section{
+    margin-top: 33rem;
+}
