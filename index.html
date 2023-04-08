@@ -12,7 +12,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
-    <video src="images\clear_vid.mov" type="video/mp4" autoplay muted loop id="myVideo" class="myVideo w-full h-auto"></video>
+    <video src="images\clear_vid.mov" type="video/mp4" autoplay muted loop id="myVideo" class="myVideo invisible lg:visible"></video>
+    <video src="images\mob_clear.mp4" type="video/mp4" autoplay muted loop id="myVideo" class="myVideomob visible lg:invisible"></video>
     <div class="container_div">
         <!-- Search -->
                 <div class="flex flex-col items-center" id="search">
@@ -29,10 +30,10 @@
         
         <!-- Temperature, Place and Date -->
                 <div class="flex flex-col items-center justify-center mt-12 lg:float-left lg:ml-28">
-                    <img class="main_weather_icon h-28" src="images/main-icon.png" alt="">
+                    <img class="main_weather_icon h-28 mb-2" src="images\triple-horizontally-aligned-lines.png" alt="">
                     <p class="temperature text-4xl font-bold text-white"> -- </p>
                     <p class="city text-white"> -- </p>
-                    <p class="date text-white text-sm">Monday, 23 Apr</p>
+                    <p class="date text-white text-sm">Today's weather</p>
                 </div>
         
         <!-- Other weather details -->
@@ -86,24 +87,24 @@
                 </div>
         
         <!-- Next 4 days forecast -->
-                <div class="lg:collapse">
+                <div class="lg:collapse mb-2">
                     <p class="bottom_section text-white text-sm mt-8 text-center">Next 4 days forecast</p>
                     <div class="next_days flex justify-around">
                         <div>
-                            <img class="h-12 pr-2" src="images\main-icon.png" alt="">
-                            <p class="text-white text-sm">24 Apr</p>
+                            <img class="h-12 pr-2 first" src="images\main-icon.png" alt="">
+                            <p class="firsttxt text-white text-sm">24 Apr</p>
                         </div>
                         <div>
-                            <img class="h-12 pr-2" src="images\main-icon.png" alt="">
-                            <p class="text-white text-sm">25 Apr</p>
+                            <img class="h-12 pr-2 second" src="images\main-icon.png" alt="">
+                            <p class="secondtxt text-white text-sm">25 Apr</p>
                         </div>
                         <div>
-                            <img class="h-12 pr-2" src="images\rain.png" alt="">
-                            <p class="text-white text-sm">26 Apr</p>
+                            <img class="h-12 pr-2 third" src="images\rain.png" alt="">
+                            <p class="thirdtxt text-white text-sm">26 Apr</p>
                         </div>
                         <div>
-                            <img class="h-12 pr-2" src="images\main-icon.png" alt="">
-                            <p class="text-white text-sm">27 Apr</p>
+                            <img class="h-12 pr-2 fourth" src="images\main-icon.png" alt="">
+                            <p class="fourthtxt text-white text-sm">27 Apr</p>
                         </div>
                     </div>
                 </div>

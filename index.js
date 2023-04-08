@@ -42,18 +42,69 @@ async function checkWeather(search_data){
     const date = new Date();
     document.querySelector(".date").innerHTML = days[date.getDay()] +', '+ date.getDate() +' '+ months[date.getMonth()];
 
+    // To change main icon
+    const main_weather_icon = ['images/sun.png', 'images/main-icon.png', 'images/rain.png','images/thunderstorm.png']
+
     // To Change background
     if(rain_value < 25){
         document.querySelector(".myVideo").src="images/clear_vid.mov";
+        document.querySelector(".myVideomob").src="images/mob_clear.mp4";
+        document.querySelector(".main_weather_icon").src = main_weather_icon[0];
     }
     if(rain_value > 25 && rain_value < 50){
         document.querySelector(".myVideo").src="images/dark_clouds_vids.mp4";
+        document.querySelector(".myVideomob").src="images/mob_dark.mp4";
+        document.querySelector(".main_weather_icon").src = main_weather_icon[1];
     }
     if(rain_value > 50 && rain_value < 75){
         document.querySelector(".myVideo").src="images/drizzle_vid2.mp4";
+        document.querySelector(".myVideomob").src="images/mob_driz.mp4";
+        document.querySelector(".main_weather_icon").src = main_weather_icon[2];
     }
     if(rain_value > 75 && rain_value < 100){
         document.querySelector(".myVideo").src="images/storm_vid.mp4";
+        document.querySelector(".myVideomob").src="images/mob_storm.mp4";
+        document.querySelector(".main_weather_icon").src = main_weather_icon[3];
+    }
+
+    // To change future forecast
+    const fforcasticon = ['images/sun.png','images/main-icon.png','images/rain.png','images/thunderstorm.png']
+
+    const tomo = date.getDate() + 1;
+    document.querySelector('.firsttxt').innerHTML = tomo +' '+ months[date.getMonth()];
+    const fforcasticon_numb1 = ((Math.random() * (3-0+1)) + 0).toFixed(0);
+    if (fforcasticon_numb1 == 4) {
+        document.querySelector('.first').src = "images/sun.png";        
+    } else {
+        document.querySelector('.first').src = fforcasticon[fforcasticon_numb1];
+    }
+
+    const theyafter = date.getDate() + 2;
+    document.querySelector('.secondtxt').innerHTML = theyafter +' '+ months[date.getMonth()];
+    const fforcasticon_numb2 = ((Math.random() * (3-0+1)) + 0).toFixed(0);
+    if (fforcasticon_numb2 == 4) {
+        document.querySelector('.second').src = "images/sun.png";
+    } else {
+        document.querySelector('.second').src = fforcasticon[fforcasticon_numb2];
+    }
+
+    const theytheyafter = date.getDate() + 3;
+    document.querySelector('.thirdtxt').innerHTML = theytheyafter +' '+ months[date.getMonth()];
+    const fforcasticon_numb3 = ((Math.random() * (3-0+1)) + 0).toFixed(0);
+    if (fforcasticon_numb3 == 4) {
+        document.querySelector('.third').src = "images/sun.png";
+    } else {
+        document.querySelector('.third').src = fforcasticon[fforcasticon_numb3];
+    }
+
+    
+    const theytheytheyafter = date.getDate() + 4;
+    document.querySelector('.fourthtxt').innerHTML = theytheytheyafter +' '+ months[date.getMonth()];
+    const fforcasticon_numb4 = ((Math.random() * (3-0+1)) + 0).toFixed(0);
+    if (fforcasticon_numb4 == 4) {
+        document.querySelector('.fourth').src = "images/sun.png";
+    } else {
+        document.querySelector('.fourth').src = fforcasticon[fforcasticon_numb4];
     }
 }
 
