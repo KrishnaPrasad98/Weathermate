@@ -3,7 +3,6 @@ const apiURL = 'https://api.openweathermap.org/data/2.5/weather?lat=12.9716&lon=
 const background = ['images\clear_vid.mov', 'images\dark_clouds_vids.mp4', 'images\drizzle_vid2.mp4', 'images\storm_vid.mp4']
 
 // To Search Place
-
 document.addEventListener('keydown', function(event){
     // console.log(event.keyCode)
     if(event.keyCode == 13){
@@ -23,11 +22,9 @@ function initiatesearch(){
 async function checkWeather(search_data){
     const response = await fetch(apiURL + search_data + `&appid=${apiKey}`)
     var data = await response.json()
+    // console.log(data);
 
-    console.log(data);
-
-    // To Assign Values to div's from API
-    // document.querySelector('.main_weather_icon').src = 
+// To Assign Values to div's from API
     document.querySelector(".temperature").innerHTML = Math.round(data.main.temp) + ' °C';
     document.querySelector(".city").innerHTML = data.name + ', ' + data.sys.country;
     const rain_value = (Math.random() * 100).toFixed(0)
@@ -36,16 +33,14 @@ async function checkWeather(search_data){
     document.querySelector(".pressure_data").innerHTML = data.main.pressure +' hPa';
     document.querySelector(".wind_data").innerHTML = data.wind.speed +' m/s';
 
-    // To fetch Date
+// To fetch Date
     const days = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
     const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
     const date = new Date();
     document.querySelector(".date").innerHTML = days[date.getDay()] +', '+ date.getDate() +' '+ months[date.getMonth()];
 
-    // To change main icon
+// To Change background and main weather icon
     const main_weather_icon = ['images/sun.png', 'images/main-icon.png', 'images/rain.png','images/thunderstorm.png']
-
-    // To Change background
     if(rain_value < 25){
         document.querySelector(".myVideo").src="images/clear_vid.mov";
         document.querySelector(".myVideomob").src="images/mob_clear.jpg";

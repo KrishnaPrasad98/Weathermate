@@ -7,33 +7,6 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
-/* .container_div{ */
-    /* background: url('images/wallpaperflare.com_wallpaper (1).jpg'); */
-    /* background-color: black; */
-    /* height: 100vh; */
-    /* background-position: center; */
-    /* background-repeat: no-repeat; */
-    /* background-attachment: fixed; */
-    /* background-position: 35%; */
-
-/* } */
-
-/* .search{
-    background-color: transparent;
-} */
-/* 
-.rain .humidity .pressure .wind .sunrise .sunset{
-    flex-basis: 100%;
-} */
-
-/* .bottom_section{
-    margin-top: 3rem;
-} */
-
-.lg_bottom_section{
-    margin-top: 33rem;
-}
-
 #myVideo {
     position: fixed;
     right: 0;
@@ -43,12 +16,12 @@ body{
   }
 
   .container_div {
-    position: fixed;
-    /* bottom: 0; */
+    position: relative;
+    bottom: 0;
     background: rgba(0, 0, 0, 0.6);
     color: #f1f1f1;
     width: 100%;
     height: 100%;
-    /* padding: 20px; */
+    padding-bottom: 1rem;
     
   }
