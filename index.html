@@ -11,10 +11,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
 </head>
-<body class="overflow-visible">
+<body>
     <video src="images\clear_vid.mov" type="video/mp4" autoplay muted loop id="myVideo" class="myVideo invisible lg:visible"></video>
     <img src="images\mob_clear.jpg" id="myVideo" class="myVideomob visible lg:invisible">
-    <div class="container_div">
+    <div class="container_div relative lg:absolute bottom-0	w-full h-full pb-4">
         <!-- Search bar -->
             <div class="flex flex-col items-center" id="search">
                 <label class="text-xl text-white mt-12 mb-3 " for="search">Weather right now at</label>
@@ -88,7 +88,7 @@
         
         <!-- Next 4 days forecast (only for mob) -->
             <div class="lg:collapse mb-2">
-                <p class="bottom_section text-white text-sm mt-8 text-center">Next 4 days forecast</p>
+                <p class="bottom_section text-white text-sm mt-8 mb-3 text-center">Next 4 days forecast</p>
                 <div class="next_days flex justify-around">
                     <div>
                         <img class="h-12 pr-2 first" src="images\main-icon.png" alt="">
