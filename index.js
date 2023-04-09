@@ -48,22 +48,22 @@ async function checkWeather(search_data){
     // To Change background
     if(rain_value < 25){
         document.querySelector(".myVideo").src="images/clear_vid.mov";
-        document.querySelector(".myVideomob").src="images/mob_clear.mp4";
+        document.querySelector(".myVideomob").src="images/mob_clear.jpg";
         document.querySelector(".main_weather_icon").src = main_weather_icon[0];
     }
     if(rain_value > 25 && rain_value < 50){
         document.querySelector(".myVideo").src="images/dark_clouds_vids.mp4";
-        document.querySelector(".myVideomob").src="images/mob_dark.mp4";
+        document.querySelector(".myVideomob").src="images/mob_dark.jpg";
         document.querySelector(".main_weather_icon").src = main_weather_icon[1];
     }
     if(rain_value > 50 && rain_value < 75){
         document.querySelector(".myVideo").src="images/drizzle_vid2.mp4";
-        document.querySelector(".myVideomob").src="images/mob_driz.mp4";
+        document.querySelector(".myVideomob").src="images/mob_driz.jpg";
         document.querySelector(".main_weather_icon").src = main_weather_icon[2];
     }
     if(rain_value > 75 && rain_value < 100){
         document.querySelector(".myVideo").src="images/storm_vid.mp4";
-        document.querySelector(".myVideomob").src="images/mob_storm.mp4";
+        document.querySelector(".myVideomob").src="images/mob_storm.jpg";
         document.querySelector(".main_weather_icon").src = main_weather_icon[3];
     }
 
