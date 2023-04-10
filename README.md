@@ -1,1 +1,1 @@
-Checkout here: https://weathermate01.netlify.app
+View project here: https://weathermate01.netlify.app
